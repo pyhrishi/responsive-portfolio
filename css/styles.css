@@ -106,6 +106,21 @@ img {
 }
 
 /* Button Dark/Light */
+.nav-btns {
+    display: flex;
+    align-items: center;
+}
+
+.nav-btns .change-theme {
+    font-size: 1.25rem;
+    color: var(--title-color);
+    margin-right: var(--mb-1);
+    cursor: pointer;
+}
+  
+  .nav-btns .change-theme:hover {
+    color: var(--first-color);
+  }
 
 /* Reusable CSS Classes */
 .section {
@@ -126,6 +141,9 @@ img {
     text-align: center;
 }
 
+/* Buttons */
+
+
 /* Layout */
 .container {
     max-width: 768px;
@@ -139,10 +157,84 @@ img {
 }
 
 /* Header */
+.header {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+}
+
+.header .nav {
+    max-width: 968px;
+    height: var(--heaader-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .nav-menu .activev-link {
+    color: var(--first-color);
+}
+
+.header .nav-menu .show-menu {
+    bottom: 0;
+}
+
+.header .nav-logo, .header .nav-toggle {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+.header .nav-logo:hover, .header .nav-toggle:hover {
+    color: var(--first-color);
+}
+
+.header .nav-toggle {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.header .nav-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.header .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    transition: 0.3s;
+}
+
+.header .nav-link-icon {
+    font-size: 1.2rem;
+}
+
+.header .nav-link:hover {
+    color: var(--first-color);
+}
+
+.header .nav-close {
+    position: absolute;
+    right: 1.5rem;
+    bottom: .7rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--first-color);
+}
+
+.header .nav-close:hover {
+    color: var(--first-color-alt);
+}
 
 /* Home */
 
-/* Buttons */
 
 /* About */
 
