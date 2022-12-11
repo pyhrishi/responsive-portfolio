@@ -3,7 +3,7 @@
 
 /* CSS Variables */
 :root {
-    --heaader-height: 3rem;
+    --header-height: 3rem;
 
     /* Colors */
     --hue-color: 340; /* Purple 250 - Green 142 - Blue 230 - Pink 340*/
@@ -80,7 +80,7 @@ html {
 }
 
 body {
-    margin: 0 0 var(--heaader-height) 0;
+    margin: 0 0 var(--header-height) 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
@@ -118,9 +118,9 @@ img {
     cursor: pointer;
 }
   
-  .nav-btns .change-theme:hover {
+.nav-btns .change-theme:hover {
     color: var(--first-color);
-  }
+}
 
 /* Reusable CSS Classes */
 .section {
@@ -150,7 +150,7 @@ img {
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
 }
-
+  
 .grid {
     display: grid;
     gap: 1.5rem;
@@ -165,43 +165,47 @@ img {
     z-index: var(--z-fixed);
     background-color: var(--body-color);
 }
-
+  
+.header.scroll-header {
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+}
+  
 .header .nav {
     max-width: 968px;
-    height: var(--heaader-height);
+    height: var(--header-height);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-.header .nav-menu .activev-link {
+  
+.header .nav-menu .active-link {
     color: var(--first-color);
 }
-
-.header .nav-menu .show-menu {
+  
+.header .nav-menu.show-menu {
     bottom: 0;
 }
-
+  
 .header .nav-logo, .header .nav-toggle {
     font-size: 1.5rem;
     color: var(--title-color);
     font-weight: var(--font-medium);
 }
-
+  
 .header .nav-logo:hover, .header .nav-toggle:hover {
     color: var(--first-color);
 }
-
+  
 .header .nav-toggle {
     font-size: 1.2rem;
     cursor: pointer;
 }
-
+  
 .header .nav-list {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
-
+  
 .header .nav-link {
     display: flex;
     flex-direction: column;
@@ -211,15 +215,15 @@ img {
     font-weight: var(--font-medium);
     transition: 0.3s;
 }
-
+  
 .header .nav-link-icon {
     font-size: 1.2rem;
 }
-
+  
 .header .nav-link:hover {
     color: var(--first-color);
 }
-
+  
 .header .nav-close {
     position: absolute;
     right: 1.5rem;
@@ -228,7 +232,7 @@ img {
     cursor: pointer;
     color: var(--first-color);
 }
-
+  
 .header .nav-close:hover {
     color: var(--first-color-alt);
 }
